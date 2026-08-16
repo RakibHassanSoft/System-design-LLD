@@ -1,3 +1,27 @@
+/*
+Abstract Factory — How It Works
+Product interfaces → Define types like Car and Bike.
+Concrete products → Create NormalCar, LuxuryCar, etc.
+Abstract Factory → Defines methods to create related products.
+Concrete Factories → Each factory creates one matching family.
+Client chooses a factory → Then gets the products from that factor
+
+
+                 VehicleFactory
+                 /             \
+                /               \
+               ↓                 ↓
+     NormalVehicleFactory   LuxuryVehicleFactory
+             │                     │
+             │                     │
+       ┌─────┴─────┐         ┌─────┴─────┐
+       ↓           ↓         ↓           ↓
+  NormalCar   NormalBike  LuxuryCar  LuxuryBike
+
+
+*/
+
+
 package Creational;
 // Product 1
 interface Car {

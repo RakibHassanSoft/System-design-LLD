@@ -1,3 +1,11 @@
+/*
+Adapter Pattern
+Converts one interface into another.
+Works as a translator between classes.
+Allows incompatible classes to work together.
+Flow: Client → Adapter → Existing Class.
+*/
+
 package Structural;
 
 // Target

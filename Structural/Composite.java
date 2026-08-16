@@ -1,6 +1,13 @@
 /*
 Composite lets you treat individual objects and groups of objects in the same way.
 Restaurant Menu
+
+Composite Pattern
+Combines individual objects into groups.
+Treats single objects and groups in the same way.
+Useful for tree-like structures.
+Makes it easy to work with nested objects.
+Flow: Individual Object + Group → Same Interface.
 │
 ├── Burger              ← MenuItem
 ├── Pizza               ← MenuItem

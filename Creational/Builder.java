@@ -1,3 +1,30 @@
+/*
+Builder Pattern — How It Works
+Computer → The final object we want to create.
+Builder → Helps create the Computer step by step.
+Set values → CPU, RAM, Storage are added one by one.
+build() → Creates the final Computer object.
+Client → Uses the completed object.
+Simple flow:
+
+Create Builder → Set values → build() → Get Computer → Use it
+
+In code :
+Builder
+   ↓
+CPU
+   ↓
+RAM
+   ↓
+Storage
+   ↓
+build()
+   ↓
+Computer
+*/
+
+
+
 package Creational;
 class Computer {
 

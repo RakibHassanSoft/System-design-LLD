@@ -1,10 +1,68 @@
-==================State Pattern  Rules==================
-One object can have different states.
-Each state can make the object behave differently.
-Make a separate class for each state.
+State Pattern ===========================
+
+The State Pattern is used when an object can have different states and its behavior changes depending on its current state. Instead of putting all state-related logic inside one class with many if-else statements, each state gets its own class. For example, a music player can have Playing, Paused, and Stopped states, and the same button can behave differently depending on the current state.
+
+State Pattern — Rules
+Use it when an object has different states.
+Each state can have different behavior.
+Create a separate class for each state.
 The main object keeps track of its current state.
-The state can change to another state.
-Use it when there are too many if-else conditions because of states.
+A state can change to another state.
+Helps avoid too many if-else or switch statements.
+
 Easy to remember:
 
-Different state → Different behavior.
+Different state → Different behavior → State Pattern.
+
+
+
+Observer Pattern ===========================
+
+The Observer Pattern is used when one object changes and other objects need to know about that change. The main object, called the Subject, keeps a list of objects called Observers and notifies them when something happens. For example, when a YouTube channel uploads a new video, all its subscribers can be notified.
+
+Observer Pattern — Rules
+Have one main object called the Subject.
+Other objects are called Observers.
+Observers subscribe/register with the Subject.
+When something changes, the Subject notifies all Observers.
+Observers can subscribe or unsubscribe.
+Useful when many objects need to react to one change.
+
+Easy to remember:
+
+One object changes → Notify many objects → Observer Pattern.
+
+
+
+
+Mediator Pattern ===========================
+
+The Mediator Pattern is used when many objects need to communicate with each other. Instead of objects communicating directly with everyone, they communicate through a Mediator. This reduces the connections between objects and makes the system easier to manage. For example, in a chat room, users don't need to send messages directly to every other user; they send the message to the chat room, and the chat room distributes it.
+
+Mediator Pattern — Rules
+Create a Mediator to control communication.
+Objects communicate through the Mediator.
+Objects don't need to communicate directly with each other.
+The Mediator knows who should receive the message.
+Helps reduce complex connections between objects.
+Useful when many objects need to communicate.
+
+Easy to remember:
+
+Many objects → One middle person → Mediator Pattern.
+
+Simple Comparison
+Pattern	Main Purpose
+State	Changes behavior based on current state
+Observer	Notifies many objects about a change
+Mediator	Manages communication between many objects
+Real-Life Examples
+
+State:
+Fan → OFF → ON → OFF
+
+Observer:
+YouTube Channel → New Video → Notify Subscribers
+
+Mediator:
+Chat Room → User sends message → Chat Room → Other Users

@@ -1,3 +1,14 @@
+/*
+Decorator Pattern
+Adds new features to an existing object.
+Does not change the original class.
+Wraps the original object with another object.
+Features can be added dynamically.
+Flow: Original Object → Decorator → Extra Feature.
+
+*/
+
+
 package Structural;
 
 interface Coffee {

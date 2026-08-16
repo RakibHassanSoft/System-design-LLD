@@ -1,3 +1,17 @@
+/*
+Factory Pattern — How It Works
+Vehicle → Common interface.
+Car/Bike → Different vehicle classes.
+Factory → Decides which vehicle to create.
+Client → Asks the Factory instead of using new directly.
+Factory returns the required object.
+Simple flow:
+
+Client → Factory → Create Object → Return Object → Use Object
+
+*/
+
+
 package Creational;
 interface Vehicle{
     void delive();

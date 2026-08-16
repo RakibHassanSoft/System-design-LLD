@@ -1,7 +1,11 @@
 /*
 
-State Pattern allows an object to change its behavior when its internal state changes.
-
+State Pattern
+Changes an object's behavior based on its current state.
+Each state has its own behavior.
+The object switches between different states.
+Avoids large if-else or switch statements.
+Flow: Object → Current State → Behavior.
                  FanState
                     △
                     │
@@ -14,6 +18,17 @@ State Pattern allows an object to change its behavior when its internal state ch
                     ↓
                    Fan
                  Context
+
+How it works :
+Fan starts
+   ↓
+OffState
+   ↓ press button
+OnState
+   ↓ press button
+OffState
+   ↓ press button
+OnState
 */
 
 package Behavioral;
