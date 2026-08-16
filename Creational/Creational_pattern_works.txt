@@ -1,0 +1,20 @@
+Factory Pattern
+
+The Factory Pattern is used to create objects without exposing the exact creation logic to the user. Instead of creating objects directly with new, we ask a factory to create the object for us. This makes the code more flexible and easier to maintain. For example, if an application needs different types of notifications such as Email, SMS, or Push notifications, a factory can create the correct notification object based on the user's choice.
+
+Abstract Factory Pattern
+
+The Abstract Factory Pattern is used to create groups or families of related objects without specifying their exact classes. It provides an interface for creating multiple related objects together. For example, a GUI application may have Light Theme and Dark Theme factories. The Light Theme factory creates light buttons, light text boxes, and light menus, while the Dark Theme factory creates dark versions of all these components.
+
+Builder Pattern
+
+The Builder Pattern is used to create complex objects step by step. It is useful when an object has many optional parts or configurations. Instead of using a large constructor with many parameters, a builder allows adding parts one by one and then creating the final object. For example, when building a pizza, you can choose the size, cheese, toppings, and sauce step by step before getting the final pizza.
+
+Simple Comparison
+Factory: Creates one object.
+Abstract Factory: Creates a family of related objects.
+Builder: Creates a complex object step by step.
+Real-Life Examples
+Factory: Coffee machine → Select Espresso → Machine creates one coffee.
+Abstract Factory: Furniture set → Modern factory creates modern chair, table, and sofa; Classic factory creates classic versions.
+Builder: Burger shop → Choose bread, meat, cheese, sauce, and vegetables step by step to build your burger.
