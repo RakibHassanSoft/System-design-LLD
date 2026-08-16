@@ -1,0 +1,10 @@
+==================State Pattern  Rules==================
+One object can have different states.
+Each state can make the object behave differently.
+Make a separate class for each state.
+The main object keeps track of its current state.
+The state can change to another state.
+Use it when there are too many if-else conditions because of states.
+Easy to remember:
+
+Different state → Different behavior.
