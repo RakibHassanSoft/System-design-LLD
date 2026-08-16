@@ -1,12 +1,5 @@
-# CSE402 Final Exam — Syllabus & Beginner Study Guide
+# Syllabus & Beginner Study Guide
 
-## Exam Information
-
-```text
-Time       : 2 Hours
-Total Marks: 40
-Questions  : 5
-Answer     : Any 4
 ```
 
 The exam mainly covers **6 areas**:
