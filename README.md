@@ -1,7 +1,5 @@
 # Syllabus & Beginner Study Guide
 
-```
-
 The exam mainly covers **6 areas**:
 
 1. Creational Design Patterns
