@@ -1,0 +1,199 @@
+## Git Core Commands — What to Do
+
+### 1. Staging — `git add`
+
+**What does it do?**
+Moves your changed files to the **staging area**, so they are ready to commit.
+
+**What to do:**
+
+```text
+git add .
+```
+
+Example:
+
+```text
+You change → code.java
+        ↓
+git add .
+        ↓
+Ready for commit
+```
+
+---
+
+### 2. Commit — `git commit`
+
+**What does it do?**
+Saves the staged changes into Git history.
+
+**What to do:**
+
+```text
+git commit -m "Added login feature"
+```
+
+Remember:
+
+```text
+git add → git commit
+```
+
+---
+
+### 3. Branching — `git branch`
+
+**What does it do?**
+Creates a new branch so you can work separately without affecting the main branch.
+
+**Create a branch:**
+
+```text
+git branch feature
+```
+
+**Create and directly switch to it:**
+
+```text
+git checkout -b feature
+```
+
+Example:
+
+```text
+main
+ |
+ └── feature
+```
+
+---
+
+### 4. Checkout — `git checkout`
+
+**What does it do?**
+Switches from one branch to another.
+
+```text
+git checkout feature
+```
+
+Go back to main:
+
+```text
+git checkout main
+```
+
+---
+
+### 5. Merge — `git merge`
+
+**What does it do?**
+Combines the changes of one branch into another branch.
+
+Suppose you have:
+
+```text
+main
+feature
+```
+
+First go to the branch that will receive the changes:
+
+```text
+git checkout main
+```
+
+Then merge:
+
+```text
+git merge feature
+```
+
+Meaning:
+
+```text
+feature changes
+       ↓
+      MERGE
+       ↓
+      main
+```
+
+---
+
+### 6. Stash — `git stash`
+
+**What does it do?**
+Temporarily saves your unfinished changes without committing them.
+
+Use when:
+
+```text
+You are working on feature
+        ↓
+You have unfinished changes
+        ↓
+You need to switch branch
+        ↓
+git stash
+```
+
+Then switch:
+
+```text
+git checkout main
+```
+
+Later, return to your branch:
+
+```text
+git checkout feature
+```
+
+Bring your changes back:
+
+```text
+git stash pop
+```
+
+---
+
+## Exam-Type Sequence
+
+**Question:** Given branch name `feature`, create the branch, make changes, commit them, switch to `main`, and merge the branch.
+
+**Answer:**
+
+```text
+git checkout -b feature
+git add .
+git commit -m "Added feature"
+git checkout main
+git merge feature
+```
+
+### If asked to temporarily save changes:
+
+```text
+git stash
+git checkout main
+```
+
+Later:
+
+```text
+git checkout feature
+git stash pop
+```
+
+## Easy Memory
+
+```text
+BRANCH   → Create separate work
+CHECKOUT → Switch branch
+STAGING  → Prepare changes
+COMMIT   → Save changes
+MERGE    → Combine branches
+STASH    → Temporarily save unfinished work
+```
